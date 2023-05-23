@@ -1,6 +1,7 @@
 import Friendlist from "components/Friendlist/Friendlist";
+import Profile from "components/profile/Profile";
 import Statistic from "components/Statistic/Statistic";
-import ProfileCard from "./components/profile-cart/ProfileCard";
+import TransactionHistory from "components/TransactionHistory.jsx/TransactionHistory";
 import user from "./Data/user"
 
 
@@ -14,9 +15,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-        <ProfileCard />
         <Statistic />
         <Friendlist />
+        <TransactionHistory />
     </div>
   );
 };

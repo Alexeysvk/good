@@ -1,4 +1,3 @@
-import {username, tag, location, avatar, stats } from './user/user.json'
 
 export const ProfileCard =()=>{
     return(
