@@ -1,8 +1,16 @@
-import Friendlist from "components/Friendlist/Friendlist";
+
 import Profile from "components/profile/Profile";
-import Statistic from "components/Statistic/Statistic";
-import TransactionHistory from "components/TransactionHistory.jsx/TransactionHistory";
 import user from "./Data/user"
+
+import Statistic from "components/Statistic/Statistic";
+import data from "./Data/data"
+
+import Friendlist from "components/Friendlist/Friendlist";
+import friends from "./Data/friends"
+
+import TransactionHistory from "components/TransactionHistory.jsx/TransactionHistory";
+import transactions from "./Data/transactions"
+
 
 
 export const App = () => {
@@ -15,9 +23,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-        <Statistic />
-        <Friendlist />
-        <TransactionHistory />
+        <Statistic title="Upload status" stats={data}/>
+        <Friendlist friends={friends} />
+        <TransactionHistory items={transactions} />
     </div>
   );
 };
